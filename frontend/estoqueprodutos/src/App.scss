@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  zoom: 0.9;
+  &_backgroundPage {
+    background-color: #3185C3;
+    height: 343px;
+    width: 100%;
+    position: absolute;
+  }
+}
