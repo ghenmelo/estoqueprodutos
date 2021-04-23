@@ -27,8 +27,10 @@ const ModalProduto = (props : propTypes) => {
   return <Modal
             open={props.modal}
             onClose={() => {
-              props.clearFields();
-              props.setModal(false)}}
+               props.clearFields();
+               props.setEditing(false);
+               props.setModal(false)
+            }}
             >
             <div className='containerModal'>
                <div className='containerElementos'>
