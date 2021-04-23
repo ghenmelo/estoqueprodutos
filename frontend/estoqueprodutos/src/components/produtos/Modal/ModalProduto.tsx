@@ -19,6 +19,7 @@ interface propTypes{
   setModal: Function,
   salvarNovoProduto: Function,
   modal: boolean,
+  editing: boolean
 }
 
 const ModalProduto = (props : propTypes) => {
@@ -32,7 +33,7 @@ const ModalProduto = (props : propTypes) => {
             <div className='containerModal'>
                <div className='containerElementos'>
                   <Typography className="titulo"> ESTOQUE DE PRODUTOS </Typography>
-                  <Typography className="subTitulo"> Incluir Produto </Typography>
+                  <Typography className="subTitulo"> { props.editing ? 'Editar' : 'Incluir'} Produto </Typography>
 
                   <div className="blockModal">
                      <TextField value={props.modalValues.nome} onChange={(e) => props.setModalValues({...props.modalValues, nome: e.target.value})} label="Nome"/>

@@ -173,6 +173,7 @@ const Tabela = () => {
             setEditing={setEditing}
             salvarNovoProduto={salvarNovoProduto}
             setModalValues={setModalValues}
+            editing={editing}
          />
 
       <div className="doubleDivider"></div>
